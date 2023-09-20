@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { AsciiConverterComponent } from './ascii-converter/ascii-converter.component';
 import { AboutComponent } from './about/about.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     AsciiConverterComponent,
-    AboutComponent
-  ],
+    AboutComponent,
+  
+    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
